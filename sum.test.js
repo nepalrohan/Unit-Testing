@@ -26,10 +26,18 @@
 
 // falsy
 
+//it is for 0, null, undefined, false.
+// test('null is falsy', ()=>{
 
-test('null is falsy', ()=>{
+// const n = null;
+// expect(n).toBeFalsy();
 
-const n = null;
-expect(n).toBeFalsy();
+// })
 
+
+// truthy
+
+test('truthy', ()=>{
+  const n= 1;
+  expect(n).toBeTruthy();
 })
