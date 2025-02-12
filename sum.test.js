@@ -37,7 +37,19 @@
 
 // truthy
 
-test('truthy', ()=>{
-  const n= 1;
-  expect(n).toBeTruthy();
+// test('truthy', ()=>{
+//   const n= 1;
+//   expect(n).toBeTruthy();
+// })
+
+
+
+//throw()
+const myFunction = require('./sum.js');
+test('throw error on invalid input', ()=>{
+
+  expect(()=>{
+    myFunction(5);
+  }).toThrow()
+
 })
